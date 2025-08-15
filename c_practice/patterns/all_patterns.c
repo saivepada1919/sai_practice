@@ -117,20 +117,41 @@ int main() {
                 printf("\n");
             }
             break;
-
         case 10: // Arrow (Upwards)
-            for (i = 1; i <= n / 2; i++) {
-                for (j = 1; j <= n / 2; j++)
+            for (i = 1; i <= n; i++) {
+                for (j = 1; j <= n; j++)
                     printf(" ");
-                printf("*\n");
-            }
-            for (i = n / 2 + 1; i <= n; i++) {
-                for (j = 1; j <= n - i; j++)
-                    printf(" ");
-                for (j = 1; j <= i; j++)
-                    printf("* ");
-                printf("\n");
-            }
+		for(j=1;j<=i;j++){
+			if(i==j){
+				printf("*");
+			}
+			else{
+				printf(" ");
+			}
+		}
+		printf("\n");
+	    }
+	    for (i = 1 ; i <=2*n; i++) {
+                    printf("*");
+	    }
+	    printf("\n");
+	    for(i=1;i<n;i++){
+		    for(j=1;j<=n;j++){
+			    printf(" ");
+		    }
+		    for(int k = 1;k<=n;k++)
+		    {
+			    if((k+i) == (n+1))
+			    {
+		    printf("*");
+			    }
+			    else
+			    {
+				    printf(" ");
+			    }
+		    }
+	    printf("\n");
+	    }
             break;
 
         case 11: // Plus Sign

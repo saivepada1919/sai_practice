@@ -1,41 +1,59 @@
 #include <stdio.h>
 int main(){
-        int x,y,z;
-        printf("enter the no.of 2D arrays, rows and columns: ");
-        scanf("%d%d%d",&x,&y,&z);
-        int a[x][y][z];
-        int size1=y*z;
-	int b[y][z];
-        for(int i=0;i<x;i++){
-		printf("enter no.of elements to %d 2D : %d\n",i+1,size1);
-                for(int j=0;j<y;j++){
-			for(int k=0;k<z;k++){
-				scanf("%d",&a[i][j][k]);
-			}
-                }
-	}
-        for(int i=0;i<x;i++){
-		printf("%dth 2D array:\n",i+1);
-		for(int j=0;j<y;j++){
-                      for(int k=0;k<z;k++){     
-			      printf("%d ",a[i][j][k]);
-                        }
-		      printf("\n");
+        int x,y;
+        printf("enter the no.of rows and columns: ");
+        scanf("%d%d",&x,&y);
+        int a[x][y];
+	int b[x][y];
+	int c[x][y];
+	printf("enter no.of elements to 1st 2D : ");
+	for(int j=0;j<x;j++){
+		for(int k=0;k<y;k++){
+			scanf("%d",&a[j][k]);
+		}
+        }
+	printf("enter no.of elements to 2nd 2D : "); 
+
+       	for(int j=0;j<x;j++){
+                for(int k=0;k<y;k++){
+                        scanf("%d",&b[j][k]);
                 }
         }
-	int c[y][z];
-	for(int i=0;i<y;i++){
-		for(int j=0;j<z;j++){
-			int sum = 0;  // reset here
-			for(int k=0;k<y;k++){
-				sum += c[i][k] * c[k][j]; 
-			}
-			b[i][j] = sum;
+
+	printf("1st 2D array:\n");
+
+	for(int j=0;j<x;j++){
+             for(int k=0;k<y;k++){     
+		     printf("%d ",a[j][k]);
+	     }
+	     printf("\n");
+	}
+
+        printf("2nd 2D array:\n");
+
+	for(int j=0;j<x;j++){
+             for(int k=0;k<y;k++){
+                     printf("%d ",b[j][k]);
+             }
+             printf("\n");
+        }
+	for(int i=0;i<x;i++){
+		for(int j=0;j<y;j++){
+			c[i][j]=0;
 		}
 	}
-	for(int j=0;j<y;j++){
-                  for(int k=0;k<z;k++){
-                                printf("%d ",b[j][k]);
+
+	for(int i=0;i<x;i++){
+		for(int j=0;j<y;j++){
+			for(int k=0;k<y;k++){
+				c[i][j]+= a[i][k] * b[k][j]; 
+			}
+		}
+	}
+	printf("After multiplication:\n");
+	for(int j=0;j<x;j++){
+                  for(int k=0;k<y;k++){
+                                printf("%-4d ",c[j][k]);
                         }
 			printf("\n");
                 }

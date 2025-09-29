@@ -1,0 +1,5 @@
+C2F.o: C2F.c /usr/include/stdc-predef.h ../include/temperature.h
+
+/usr/include/stdc-predef.h:
+
+../include/temperature.h:

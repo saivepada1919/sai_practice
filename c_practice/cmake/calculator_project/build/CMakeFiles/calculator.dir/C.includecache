@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/calculator.h
+
+/home/sai/cmake/calculator_project/src/main.c
+stdio.h
+-
+calculator.h
+/home/sai/cmake/calculator_project/src/calculator.h
+

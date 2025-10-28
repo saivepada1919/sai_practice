@@ -1,0 +1,3 @@
+/home/sai/sai_practice/c_practice/cmake/calculator_project/build/CMakeFiles/rebuild_cache.dir
+/home/sai/sai_practice/c_practice/cmake/calculator_project/build/CMakeFiles/edit_cache.dir
+/home/sai/sai_practice/c_practice/cmake/calculator_project/build/CMakeFiles/calculator.dir

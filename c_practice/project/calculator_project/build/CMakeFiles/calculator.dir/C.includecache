@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/calculator.h
+
+/home/sai/sai_practice/c_practice/cmake/calculator_project/src/add.c
+calculator.h
+/home/sai/sai_practice/c_practice/cmake/calculator_project/src/calculator.h
+
+/home/sai/sai_practice/c_practice/cmake/calculator_project/src/div.c
+calculator.h
+/home/sai/sai_practice/c_practice/cmake/calculator_project/src/calculator.h
+
+/home/sai/sai_practice/c_practice/cmake/calculator_project/src/main.c
+stdio.h
+-
+calculator.h
+/home/sai/sai_practice/c_practice/cmake/calculator_project/src/calculator.h
+
+/home/sai/sai_practice/c_practice/cmake/calculator_project/src/mul.c
+calculator.h
+/home/sai/sai_practice/c_practice/cmake/calculator_project/src/calculator.h
+
+/home/sai/sai_practice/c_practice/cmake/calculator_project/src/sub.c
+calculator.h
+/home/sai/sai_practice/c_practice/cmake/calculator_project/src/calculator.h
+

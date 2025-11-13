@@ -6,7 +6,7 @@ int main(){
 	scanf("%d",&n);
 	getchar();
 	char c[n];
-	fgets(c,n,stdin);
+	fgets(c,n+1,stdin);
 	c[strcspn(c,"\n")]='\0';
 	int s=0;
 	int e=strlen(c)-1;

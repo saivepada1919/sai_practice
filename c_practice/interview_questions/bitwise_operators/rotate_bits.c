@@ -1,10 +1,11 @@
 #include <stdio.h>
 int rotate(int n,int pos,char shift){
+	int size = sizeof(int)*8;
 	if(shift == 'l'){
-		n=(n<<pos) | (n>>(32-pos));
+		n=(n<<pos) | (n>>(size-pos));
 	}
 	else{
-		n=(n>>pos) | (n<<(32-pos));
+		n=(n>>pos) | (n<<(size-pos));
 	}
 	return n;
 }

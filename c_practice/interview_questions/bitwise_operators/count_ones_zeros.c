@@ -1,8 +1,9 @@
 #include <stdio.h>
 void count(int n){
 	int ones=0,zeros=0;
-	while(n!=0){
-		if(n&1){
+	int size = sizeof(int)*8;
+	for(int i =0;i<size;i++){
+		if(n>>i&1){
 			ones++;
 		}
 		else{

@@ -25,16 +25,16 @@ struct node *insert_at_end(struct node *head,int data){
 }
 
 struct node *reverse_sll(struct node *head){
-	struct node *prev=NULL,*next=NULL;
+	struct node *ptr1 = NULL, *ptr2 = NULL;
 	while(head != NULL){
-		next = head->link;
-		head->link = prev;
-		prev = head;
-		head = next;
+		ptr1 = head->link;
+		head->link = ptr2;
+		ptr2 = head;
+		head = ptr1;
 	}
-	head = prev;
-	return head;
+	return ptr2;
 }
+
 
 void print(struct node *head){
 	struct node *current=head;

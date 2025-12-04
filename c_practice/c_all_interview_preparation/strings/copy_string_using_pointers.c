@@ -20,6 +20,6 @@ int main(){
 		return 0;
 	}
 	copying(str1,str2);
-	printfc("secnod string : %s\n",str2);
+	printf("secnod string : %s\n",str2);
 	return 0;
 }

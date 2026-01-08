@@ -8,7 +8,7 @@ int game(char you,char computer){
 	}
 	//p->paper
 	//s->stone
-	//z->siccors
+	//z->scissors
 	if(you == 's' && computer == 'p'){
 		return 0;
 	}
@@ -36,41 +36,41 @@ int main(){
 		printf("\n\n\n\t\t\t\tENTER YOUR CHOICE\n");
 		printf("\n\t\t\t1.START 2.PLAY AGAIN  3.EXIT\n\n\t\t\t\t\t");
 		scanf("%d",&choice);
-	if (choice == 1 || choice == 2) {
-	srand(time(NULL));
-	n = rand() % 100;
-	if(n <= 33){
-		computer = 's';
-	}
-	else if(n > 33 && n <= 66){
-		computer = 'p';
-	}
-	else{
-		computer = 'z';
-	}
+		if (choice == 1 || choice == 2) {
+			srand(time(NULL));
+			n = rand() % 100;
+			if(n <= 33){
+				computer = 's';
+			}
+			else if(n > 33 && n <= 66){
+				computer = 'p';
+			}
+			else{
+				computer = 'z';
+			}
 
-	printf("\n\n\t\t\tEnter s for STONE, p for PAPER and z for SCISSOR\n\t\t\t\t\t");
-	scanf(" %c", &you);
-	result = game(you, computer);
+			printf("\n\n\t\t\tEnter s for STONE, p for PAPER and z for SCISSOR\n\t\t\t\t\t");
+			scanf(" %c", &you);
+			result = game(you, computer);
 
-	if (result == -1) {
-		printf("\n\n\t\t\t\t\tGame Draw!\n");
-	}
-	else if (result == 1) {
-		printf("\n\n\t\t\t\tWow! You have won the game!\n");
-	}
-	else {
-		printf("\n\n\t\t\t\tOh! You have lost the game!\n");
-	}
-	printf("\t\t\tYou choose : %c and Computer choose : %c\n",you, computer);
-	}
-	else if(choice == 3){
-		printf("\n\n\t\t\t--------THANKYOU----------\n");
-                        return 0;
-	}
-	else{
-	        printf("\n\n\t\t---------INVALID INPUT---------- \n\t\t\t\t PLEASE TRY AGAIN \n");
-	}
+			if (result == -1) {
+				printf("\n\n\t\t\t\t\tGame Draw!\n");
+			}
+			else if (result == 1) {
+				printf("\n\n\t\t\t\tWow! You have won the game!\n");
+			}
+			else {
+				printf("\n\n\t\t\t\tOh! You have lost the game!\n");
+			}
+			printf("\t\t\tYou choose : %c and Computer choose : %c\n",you, computer);
+		}
+		else if(choice == 3){
+			printf("\n\n\t\t\t--------THANKYOU----------\n");
+			return 0;
+		}
+		else{
+			printf("\n\n\t\t---------INVALID INPUT---------- \n\t\t\t\t PLEASE TRY AGAIN \n");
+		}
 	}
 	return 0;
 }

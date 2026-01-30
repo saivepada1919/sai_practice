@@ -27,7 +27,16 @@ interfacing rtc and dt11(temperature and humudity sensor) to qcc744mx board
 
 parcticed board to board tranfer using urat but not completed.
 
- 
+30/01/2026
+
+completed uart protocol.transfer data via uart protocol using ttl to minicom.
+
+tried diaplay rtc module data on lcd diaplay but not complited yet.
+
+tried to display rtc data on minicom via uart not completed.
+
+
+
 
 
 

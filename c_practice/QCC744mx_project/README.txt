@@ -35,6 +35,12 @@ tried diaplay rtc module data on lcd diaplay but not complited yet.
 
 tried to display rtc data on minicom via uart not completed.
 
+31/01/2026
+
+completed 
+            rtc module --> i2c --> qccboard --> uart --> tty --> minicom
+
+tried board to board transmission using spi protocol but not completed.
 
 
 

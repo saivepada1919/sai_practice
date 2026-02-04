@@ -42,6 +42,22 @@ completed
 
 tried board to board transmission using spi protocol but not completed.
 
+02/02/2026
+
+complted 
+	rtc module + dht11 + AQI -->i2c --> qccboard --> uart --> tty --> minicom
+
+03/02/2026
+
+spi board to board communiction completed.
+tried to transfer sensors data but not yet completed.
+
+04/02/2026
+
+completed
+	sensors(rtc+dht11+aqi) -> i2c -> qccboard1(master) -> spi -> qccboard2 -> minicom
+	
+	tried rgb led but not completed 
 
 
 

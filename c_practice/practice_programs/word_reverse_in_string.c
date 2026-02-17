@@ -29,5 +29,7 @@ int main(){
 	printf("reverse string : %s\n",str);
 	return 0;
 }
+
+
 	
 

@@ -21,8 +21,8 @@ int main(){
 				arr2[j] =1;
 			}
 		}
-		if(count==1){
-			printf("%d times : %d\n",arr1[i],count);
+		if(count){
+			printf("%d time : %d\n",arr1[i],count);
 		}
 	}
 	return 0;

@@ -4,12 +4,12 @@
 
 //display all students
 void viewStudents() {
-        FILE *fp = fopen("students.txt", "rb");
+        FILE *fp = fopen("students.txt", "r");
         student s;
-        while(fread(&s, sizeof(s), 1, fp)) {
+        while(fscanf(fp, "%d %s %d %f", &s.id, s.name, &s.age, &s.marks) == 4){
                 printf("%d %s %d %.2f\n", s.id, s.name, s.age, s.marks);
         }
-	printf("\n");
         fclose(fp);
 }
+
 

@@ -7,6 +7,5 @@ add_executable(app src/addStudent.c
 		   src/updateStudent.c  
 		   src/viewStudents.c
 		   test/main.c
-		   test/students.txt
 		   )
 
